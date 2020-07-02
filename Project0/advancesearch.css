@@ -1,0 +1,18 @@
+body{
+    text-align: left;   
+}
+.right{
+    text-align: right;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#all_words,#exact_words,#any_words,#no_words{
+    border-radius: 20px;
+}
+#result{
+    background-color: blue;
+    color: white;
+}
