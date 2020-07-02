@@ -1,0 +1,12 @@
+body{
+    text-align: center;   
+}
+.right{
+    text-align: right;
+}
+h1{
+    text-align: center;
+}
+#img{
+    border-radius: 20px;
+}
