@@ -1,12 +1,36 @@
 body{
     text-align: center;   
 }
+#img{
+    margin-top: 112px;
+}
 .right{
     text-align: right;
 }
 h1{
     text-align: center;
 }
-#img{
-    border-radius: 20px;
+.searchbar{
+    border-style: groove;
+    border: 2px solid #DFE1E5;
+    border-radius: 40px;
+    width: 43.3%;
+    padding: 14.5px;
+    margin-top: 9px;
+    border-width: 1px;
+}
+.searchbar:hover{
+    box-shadow: 0 0 5px #C6C6C6;     
+}
+.button {
+    background-color: #F4F4F4; 
+    color: #7F637D; 
+    margin-top: 15px;
+    padding: 12px 15px;
+    border: #7F637D;
+    border-radius: 5px;
+}      
+.button:hover {
+    border-color: #C6C6C6;
+    color: black;
 }

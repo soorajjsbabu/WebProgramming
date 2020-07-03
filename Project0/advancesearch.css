@@ -6,13 +6,23 @@ body{
 }
 .center{
     display: block;
-    margin-left: auto;
+    margin-left: 20px;
     margin-right: auto;
 }
+label{
+    margin-left: 10px;
+}
 #all_words,#exact_words,#any_words,#no_words{
-    border-radius: 20px;
+    margin-left: 10px;
 }
 #result{
-    background-color: blue;
+    margin-left: 10px;
+    background-color: #4285F4;
     color: white;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 3px;
+    border-color: #4285F4;
+    font-family: Roboto;
 }
