@@ -30,10 +30,11 @@ label{
     padding: 5px;
     padding-left: 15px;
     padding-right: 15px;
-    border-radius: 3px;
-    border-color: #4B8DFA;
+    border-radius: 2px;
+    border: 1px solid #3079ED;
     font-family: Roboto;
     font-size: 13px;
+    outline:none;
 }
 .button:hover{
     background-color: #397EEC;

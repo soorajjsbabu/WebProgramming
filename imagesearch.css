@@ -32,7 +32,6 @@ h1{
     border-radius: 5px;
 }      
 .button:hover {
-    /* box-shadow: 0 0 5px #C6C6A6; */
     border: 1px solid #C6C6A6;
     color: black;
 }
