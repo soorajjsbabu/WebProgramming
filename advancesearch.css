@@ -10,18 +10,39 @@ body{
     margin-left: 20px;
     margin-right: auto;
 }
+a{
+    color: #272727;
+    text-decoration: none;
+    padding-right: 10px;
+}
+a:hover{
+    color: #777777;
+    text-decoration: underline;
+}
 label{
     margin-left: 10px;
 }
 #all_words,#exact_words,#any_words,#no_words{
     margin-left: 10px;
+    width: 40%;
+    height: 30px;
+    border: 1px solid #C0C0C0;
+    outline: none;
+}
+#all_words{
+    margin-left: 76px;
+}
+#any_words{
+    margin-left: 52px;
+}
+#no_words{
+    margin-left: 44px;
 }
 #grid{
     display: grid;
     padding: 10px;
-    grid-column: 10px;
-    grid-row: 5px;
-    grid-template-columns: 200px auto;
+    grid-row: 15px;
+    grid-template-rows: 50px 50px 50px 50px;
 }
 .button{
     margin-left: 10px;

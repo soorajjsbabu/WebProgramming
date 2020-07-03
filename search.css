@@ -1,8 +1,17 @@
 body{
-    text-align: center;   
+    text-align: center; 
 }
 #img{
     margin-top: 112px;
+}
+a{
+    color: #272727;
+    text-decoration: none;
+    padding-right: 10px;
+}
+a:hover{
+    color: #777777;
+    text-decoration: underline;
 }
 .right{
     text-align: right;
