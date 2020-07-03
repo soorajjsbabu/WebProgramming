@@ -1,5 +1,6 @@
 body{
     text-align: left;   
+    font-family: Roboto;
 }
 .right{
     text-align: right;
@@ -15,14 +16,25 @@ label{
 #all_words,#exact_words,#any_words,#no_words{
     margin-left: 10px;
 }
-#result{
+#grid{
+    display: grid;
+    padding: 10px;
+    grid-column: 10px;
+    grid-row: 5px;
+    grid-template-columns: 200px auto;
+}
+.button{
     margin-left: 10px;
-    background-color: #4285F4;
+    background-color: #4B8DFA;
     color: white;
     padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
     border-radius: 3px;
-    border-color: #4285F4;
+    border-color: #4B8DFA;
     font-family: Roboto;
+    font-size: 13px;
+}
+.button:hover{
+    background-color: #397EEC;
 }
