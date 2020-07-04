@@ -1,8 +1,19 @@
 body{
-    text-align: center;   
+    text-align: center; 
 }
 #img{
     margin-top: 112px;
+}
+a{
+    color: #272727;
+    text-decoration: none;
+    padding-right: 10px;
+    font-family: Arial;
+    font-size: 13px;
+}
+a:hover{
+    color: #777777;
+    text-decoration: underline;
 }
 .right{
     text-align: right;
@@ -26,12 +37,12 @@ h1{
 .button {
     background-color: #F4F4F4; 
     color: #7F637D; 
-    margin-top: 15px;
     padding: 10px 15px;
     border: 1px solid #F4F4F4;
     border-radius: 5px;
-    margin-left: 7px;
+    margin: 6px;
     outline:none;
+
 }      
 .button:hover {
     border: 1px solid #C6C6A6;
