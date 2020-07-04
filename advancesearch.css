@@ -34,6 +34,7 @@ label{
     border-color: #4B8DFA;
     font-family: Roboto;
     font-size: 13px;
+    outline:none;
 }
 .button:hover{
     background-color: #397EEC;
