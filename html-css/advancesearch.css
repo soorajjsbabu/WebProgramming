@@ -1,6 +1,7 @@
 body{
     text-align: left;   
-    font-family: Roboto;
+    font-family: Arial;
+    
 }
 .right{
     text-align: right;
@@ -23,6 +24,7 @@ a:hover{
 }
 label{
     margin-left: 10px;
+    font-size: 12.5px;
 }
 #all_words,#exact_words,#any_words,#no_words{
     margin-left: 10px;
@@ -32,13 +34,13 @@ label{
     outline: none;
 }
 #all_words{
-    margin-left: 76px;
+    margin-left: 70px;
 }
 #any_words{
-    margin-left: 52px;
+    margin-left: 48px;
 }
 #no_words{
-    margin-left: 44px;
+    margin-left: 39px;
 }
 #grid{
     display: grid;
@@ -47,7 +49,7 @@ label{
     grid-template-rows: 50px 50px 50px 50px;
 }
 .button{
-    margin-left: 10px;
+    margin-left: 16px;
     background-color: #4B8DFA;
     color: white;
     padding: 8px;
@@ -60,7 +62,7 @@ label{
     font-size: 11px;
     outline:none;
     position: absolute;
-    left: 45%;
+    left: 43%;
 }
 .button:hover{
     background-color: #397EEC;
