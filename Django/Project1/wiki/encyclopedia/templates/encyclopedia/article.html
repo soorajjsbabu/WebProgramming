@@ -1,0 +1,6 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block body %}
+    {% load markup_tags %}
+    {{ the_text|apply_markup:"markdown" }}
+{% endblock %}
