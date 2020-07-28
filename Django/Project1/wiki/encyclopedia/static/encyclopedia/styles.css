@@ -12,10 +12,19 @@ h1 {
     padding-top: 20px;
 }
 
-textarea {
-    height: 90vh;
-    width: 80%;
+#title{
+    width: 50%;
 }
+
+h2{
+    margin-top: 20px;
+}
+
+textarea {
+    height: 65vh;
+    width: 90%;
+}
+
 
 .main {
     padding: 10px;
