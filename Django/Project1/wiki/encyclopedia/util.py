@@ -4,6 +4,7 @@ from django.core.files.base import ContentFile
 from django.core.files.storage import default_storage
 
 
+
 def list_entries():
     """
     Returns a list of all names of encyclopedia entries.
@@ -13,15 +14,18 @@ def list_entries():
                 for filename in filenames if filename.endswith(".md")))
 
 
-def save_entry(title, content):
+def save_entry(title, content, update = False):
     """
     Saves an encyclopedia entry, given its title and Markdown
     content. If an existing entry with the same title already exists,
     it is replaced.
     """
     filename = f"entries/{title}.md"
-    if default_storage.exists(filename):
-        default_storage.delete(filename)
+    if default_storage.exists(filename): 
+        if update:
+            default_storage.delete(filename)
+        else:
+            raise FileExistsError      
     default_storage.save(filename, ContentFile(content))
 
 

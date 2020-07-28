@@ -1,6 +1,11 @@
 {% extends "encyclopedia/layout.html" %}
 
+{% block title %}
+    {{title}}
+{% endblock %}
+
 {% block body %}
     {% load markup_tags %}
     {{ the_text|apply_markup:"markdown" }}
+    <a href="/wiki/edit/{{title}}/">Edit page</a>
 {% endblock %}
