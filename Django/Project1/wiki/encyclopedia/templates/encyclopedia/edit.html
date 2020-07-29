@@ -1,0 +1,18 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Edit article
+{% endblock %}
+
+{% block body %}
+
+    <form method="POST" action="/wiki/edit/{{title}}/" autocomplete="off">
+        {% csrf_token %}
+        <h2>{{title}}</h2>
+        <input type="hidden" value="{{title}}" name="title">
+        <h2>Content</h2>
+        <textarea cols="5" rows="5" name="content">{{content}}</textarea><br>
+        <input type="submit" value="Save">
+    </form>
+
+{% endblock %}
