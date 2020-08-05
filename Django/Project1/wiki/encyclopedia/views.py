@@ -7,7 +7,6 @@ import random
 
 
 def index(request):
-    print("Index triggered")
     print(request)
     title = request.GET.get('q', None)
     if title:
@@ -23,7 +22,6 @@ def index(request):
         })
 
 def article(request, title):
-    print("Article triggered")
     md_file = util.get_entry(title)
     if not md_file:
         return render(request, "encyclopedia/404.html")
@@ -33,7 +31,6 @@ def article(request, title):
     })
 
 def random_page(request):
-    print("Random triggered")
     entries = util.list_entries() 
     selected_page = random.choice(entries)
     return redirect('article', title=selected_page)
@@ -42,7 +39,6 @@ def new(request):
     return render(request, "encyclopedia/new.html")
 
 def add_article(request):
-    print("Add article triggered")
     title = request.POST['title']
     content = request.POST['content']
     print(title, content)
@@ -60,7 +56,6 @@ def edit(request, title):
             "content": md_file
         })
     if request.method == "POST":
-        print("Post method")
         print(request.POST)
         title = request.POST['title']
         content = request.POST['content']
